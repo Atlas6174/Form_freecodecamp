@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form FreeCodeCamp</title>
+
+  <!--STYLES-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="form-container">
+  <div class="form-header">
+    <h1 id="title">GP Corp Survey Form</h1>
+    <p id="description">Just take few seconds</p>
+  </div>  
+  <form id="survey-form" action="#">
+
+    <div id="basic-information">
+
+      <div id="name-content" class="form-content">
+	<label id="name-label" for="name">Name</label>
+	<input id="name" name="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div id="email-content" class="form-content">
+	<label id="email-label" for="email">Email</label>
+	<input id="email" name="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <div id="age-content" class="form-content">
+	<label id="number-label" for="number">Age</label>
+	<input id="number" name="number" type="number" placeholder="Enter your age" min="8" max="140" required>
+      </div>
+
+    </div>
+    <div id="aditional-information">
+
+      <div id="selection-content" class="form-content">
+	<p>Wich content would you like to see in this page?</p>
+	<select id="dropdown" name="dropdown">
+	  <option disable selected>Select the option of your preference</option>
+	  <option value="sports">Sports</option>
+	  <option value="science">Science</option>
+	  <option value="music">Music</option>
+	  <option value="history">History</option>
+	  <option value="others">Others</option>
+	</select>
+      </div>
+      <div id="radio-content" class="form-content">
+	<p>How would you rate the service?</p>
+	<label><input name="rate" type="radio" value="very good">Very Good</label>
+	<label><input name="rate" type="radio" value="good">Good</label>
+	<label><input name="rate" type="radio" value="bad">Bad</label>
+	<label><input name="rate" type="radio" value="very bad">Very Bad</label>
+      </div>
+      <div id="check-content" class="form-content">
+	<p>When do you use to consult our webp? (select all option that aply)</p>
+	<label><input type="checkbox" value="morning">Morning</label>
+	<label><input type="checkbox" value="midday">Midday</label>
+	<label><input type="checkbox" value="afternoon">Afternoon</label>
+	<label><input type="checkbox" value="evening">Evening</label>
+	<label><input type="checkbox" value="midnight">Midnight</label>
+      </div>
+
+      <div id="comments-content" class="form-content">
+	<p>If youu have any suggestion to improve our webpage, write us.</p>
+	<textarea id="comment" name="comments" cols="30" rows="10"></textarea>
+      </div>
+      
+    </div>
+    <div id="submit-content">
+      <div class="form-content">
+	<input id="submit" type="submit">
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
